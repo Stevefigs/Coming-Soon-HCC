@@ -21,6 +21,10 @@ if( $('#email').val() !== ''){
   $('.main').addClass('open');
   }
 
+  //message displayed no email
+  $('#email').attr('value', 'oops... please provide email')
+ 
+
 }) 
 
 //clears value="EMAIL"
