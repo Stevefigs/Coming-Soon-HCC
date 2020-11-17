@@ -1,0 +1,87 @@
+.tagline{
+  height:100vh;
+  position:fixed;
+  margin:0;
+  padding:10% 20% 1% 20%;
+  background-image: url(../img/cottage.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: 20% 0%;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr;
+  .tagger{
+  	grid-column: 1 / span 2;
+ align-self:end;
+ max-width:60%;
+ padding:1rem;
+  grid-row:4;
+  justify-self:center;
+  }
+.confirm{
+  grid-row: 1 / span 3 ;
+  grid-column:1 / span 2;
+  display:grid;
+  grid-template-rows: repeat(5, auto);
+  grid-template-columns: 1fr 1fr;
+  ul{
+  	justify-self:end;
+  	grid-row:5;
+  	grid-column:2;
+  	.social{
+  		max-height:20px;
+  	}
+  }
+
+  section {
+  border-color: rgba(255,255,255, 1);
+  border-style:solid;
+  border-width:8px;
+  background-color: rgba(255,255,255, .7);
+  grid-row: 1 / span 4;
+  grid-column: 1 / span 3;
+  display:grid;
+  grid-template-rows: repeat (4, 1fr);
+  grid-template-columns: 1fr 1fr .5fr;
+
+  img{
+  	margin:0;
+  	padding:0;
+  	justify-self:center;
+  	align-self:end;
+  	max-width:40%;
+    grid-column: 1 / span 3;
+    grid-row:1;
+
+
+  }
+  h4{
+  	padding:0;
+  	margin:0;
+  	font-size:3em;
+  	justify-self:center;
+   	grid-column: 1 / span 3;
+   	font-family: 'Playfair Display', serif;
+   	font-weight:100;
+   	align-self:end;
+   	grid-row:2;
+  }
+  p{
+  	font-size:.9rem;
+  	font-family: 'Montserrat', sans-serif;
+  	justify-self:center;
+   	grid-column: 1 / span 3;
+   	grid-row:3;
+   	margin:0;
+   	font-weight:400;
+    align-self:start;
+    padding:0 0 0 0;
+    text-align:center;
+  }
+}
+}
+}

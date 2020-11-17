@@ -1,0 +1,357 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  display: grid;
+  grid-template-row: 1fr;
+  grid-template-columns: 1fr;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0; }
+
+main {
+  z-index: 1;
+  height: 100vh;
+  position: fixed;
+  padding: 2rem;
+  background-image: url(../img/cottage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 0%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: 8px solid white;
+  outline-offset: -60px; }
+  main .grey {
+    height: 100%;
+    padding: 2rem 2rem 2rem 3rem;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr); }
+    main .grey h3 {
+      display: none; }
+    @media screen and (min-width: 40em) {
+      main .grey h1 {
+        font-size: 5rem;
+        font-weight: 500;
+        letter-spacing: 20px;
+        padding: 0 0 9rem 1rem;
+        margin: 0;
+        color: #fff;
+        grid-row: 1;
+        grid-column: 2 / span 2;
+        justify-self: start;
+        align-self: start; } }
+    @media screen and (min-width: 60em) {
+      main .grey h1 {
+        grid-column: 1 / span 2; } }
+    @media screen and (min-width: 40em) {
+      main .grey h2 {
+        display: block;
+        color: #fff;
+        font-size: 5rem;
+        font-weight: 100;
+        padding: 0;
+        margin: 0;
+        grid-row: 1;
+        grid-column: 1 / span 2;
+        justify-self: center;
+        align-self: center; } }
+    @media screen and (min-width: 1150px) {
+      main .grey h2 {
+        font-size: 7rem; } }
+    main .grey p {
+      display: block; }
+      @media screen and (min-width: 40em) {
+        main .grey p {
+          font-size: .95em;
+          margin: .5em;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #fff;
+          padding: 1em;
+          color: #fff;
+          grid-row: 3 / span 4;
+          grid-column: 1 / span 3;
+          justify-self: end;
+          align-self: center; } }
+      @media screen and (min-width: 1150px) {
+        main .grey p {
+          font-size: 1.3rem;
+          font-weight: 300;
+          grid-row: 2 / span 4;
+          grid-column: 1 / span 2;
+          align-self: end; } }
+      main .grey p .firstcharacter {
+        color: #fff;
+        float: left;
+        font-family: 'Playfair Display', serif;
+        font-size: 75px;
+        line-height: 60px;
+        padding-top: 0px;
+        padding-right: 8px;
+        padding-left: 3px; }
+    @media screen and (min-width: 40em) {
+      main .grey .logo2 {
+        padding: 2rem;
+        grid-row: 2/ span 2;
+        grid-column: 4 / span 4;
+        max-width: 85%;
+        object-fit: cover;
+        justify-self: center;
+        align-self: center; } }
+    @media screen and (min-width: 1315px) {
+      main .grey .logo2 {
+        grid-column: 5 / span 3; } }
+    @media screen and (min-width: 40em) {
+      main .grey .tag {
+        padding: 2rem;
+        grid-row: 4;
+        grid-column: 4 / span 4;
+        max-width: 85%;
+        object-fit: cover;
+        justify-self: center;
+        align-self: start; } }
+    @media screen and (min-width: 1315px) {
+      main .grey .tag {
+        grid-column: 5 / span 3; } }
+    @media screen and (min-width: 40em) {
+      main .grey form {
+        margin: 0;
+        grid-row: 5;
+        grid-column: 4 / span 3;
+        display: grid;
+        grid-gap: .5em;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 1fr;
+        justify-self: start;
+        align-self: center; } }
+    @media screen and (min-width: 1316px) {
+      main .grey form {
+        margin: 0 0 0 -32px;
+        justify-self: center;
+        grid-column: 5 / span 3; } }
+    main .grey form input {
+      appearance: none; }
+    @media screen and (min-width: 40em) {
+      main .grey form input[type='EMAIL'] {
+        color: #fff;
+        grid-column: 1;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-color: white;
+        border-style: solid;
+        border-width: 1px;
+        padding: 1.2rem 4rem 1.2rem 1.5rem;
+        font-size: .85em; } }
+    @media screen and (min-width: 1316px) {
+      main .grey form input[type='EMAIL'] {
+        padding: 1.2rem 10rem 1.2rem 1.5rem;
+        justify-self: start; } }
+    main .grey form input[type='submit'] {
+      background-color: rgba(0, 0, 0, 0);
+      padding: 1.2rem 1.25rem 1.2rem 1.25rem;
+      border-width: 1.5px;
+      border-style: solid;
+      border-color: white;
+      grid-column: 2;
+      color: #fff;
+      font-size: .9em; }
+    main .grey form .form-message {
+      color: white; }
+
+@media screen and (max-width: 40em) {
+  main {
+    height: 100vh;
+    position: fixed;
+    padding: 1rem;
+    background-image: url(../img/cottage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 0%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none; }
+    main .grey {
+      height: 100%;
+      padding: 1em;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(9, 1fr);
+      border-style: solid;
+      border-color: white;
+      border-width: 6px; }
+      main .grey h1 {
+        letter-spacing: 10px;
+        color: #fff;
+        font-size: 1.4rem;
+        grid-row: 1;
+        font-weight: 400;
+        justify-self: center;
+        align-self: end;
+        margin: 0; }
+      main .grey h3 {
+        margin: -10px 0 0 0;
+        display: block;
+        color: #fff;
+        font-size: 3.5rem;
+        grid-row: 2;
+        font-weight: 100;
+        justify-self: center;
+        align-self: start; }
+      main .grey .logo2 {
+        max-width: 300px;
+        object-fit: cover;
+        justify-self: center;
+        align-self: center;
+        grid-row: 3; }
+      main .grey h2 {
+        display: none; }
+      main .grey p {
+        margin: 0;
+        display: none; }
+      main .grey .blurb {
+        margin: 0;
+        grid-row: 6;
+        font-size: 1.5rem;
+        font-weight: 300; }
+      main .grey form {
+        grid-row: 7;
+        justify-self: end;
+        display: grid;
+        grid-gap: .8em;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 1fr;
+        place-items: end; }
+        main .grey form input[type='email'] {
+          color: #fff;
+          background-color: rgba(255, 255, 255, 0.2);
+          border-color: white;
+          border-style: solid;
+          border-width: 1px;
+          padding: 1.2rem 4rem 1.2rem 1.5rem;
+          font-size: .85em; }
+      main .grey .tag {
+        max-width: 300px;
+        object-fit: cover;
+        justify-self: center;
+        align-self: start;
+        grid-row: 9; } }
+.main {
+  transition: opacity .9s;
+  opacity: 1; }
+
+.open {
+  opacity: 0; }
+
+.tagline {
+  height: 100vh;
+  position: fixed;
+  margin: 0;
+  padding: 10% 20% 1% 20%;
+  background-image: url(../img/cottage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 0%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr; }
+  .tagline .tagger {
+    grid-column: 1 / span 2;
+    align-self: end;
+    max-width: 60%;
+    padding: 1rem;
+    grid-row: 4;
+    justify-self: center; }
+  .tagline .confirm {
+    grid-row: 1/span 3;
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 1fr 1fr; }
+    .tagline .confirm ul {
+      justify-self: end;
+      grid-row: 5;
+      grid-column: 2; }
+      .tagline .confirm ul .social {
+        max-height: 20px; }
+    .tagline .confirm section {
+      border-color: white;
+      border-style: solid;
+      border-width: 8px;
+      background-color: rgba(255, 255, 255, 0.7);
+      grid-row: 1 / span 4;
+      grid-column: 1 / span 3;
+      display: grid;
+      grid-template-rows: repeat 4, 1fr;
+      grid-template-columns: 1fr 1fr .5fr; }
+      .tagline .confirm section img {
+        margin: 0;
+        padding: 0;
+        justify-self: center;
+        align-self: end;
+        max-width: 40%;
+        grid-column: 1 / span 3;
+        grid-row: 1; }
+      .tagline .confirm section h4 {
+        padding: 0;
+        margin: 0;
+        font-size: 3em;
+        justify-self: center;
+        grid-column: 1 / span 3;
+        font-family: 'Playfair Display', serif;
+        font-weight: 100;
+        align-self: end;
+        grid-row: 2; }
+      .tagline .confirm section p {
+        font-size: .9rem;
+        font-family: 'Montserrat', sans-serif;
+        justify-self: center;
+        grid-column: 1 / span 3;
+        grid-row: 3;
+        margin: 0;
+        font-weight: 400;
+        align-self: start;
+        padding: 0 0 0 0;
+        text-align: center; }
+
+@media screen and (max-width: 40em) {
+  .tagline {
+    padding: 1rem; }
+    .tagline .tagger {
+      max-width: 100%; }
+    .tagline .confirm section {
+      height: 80vh;
+      display: grid;
+      grid-template-rows: repeat 7, auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      border-width: 5px; }
+      .tagline .confirm section img {
+        grid-row: 1;
+        grid-column: 1 / span 3;
+        padding: 1em;
+        max-width: 100%; }
+      .tagline .confirm section h4 {
+        font-size: 1.7rem;
+        font-weight: 100;
+        grid-row: 2;
+        grid-column: 2/span 2;
+        text-align: right; }
+      .tagline .confirm section p {
+        padding: 0 1.25em;
+        font-size: 1rem;
+        grid-column: 2/span 2;
+        grid-row: 3;
+        text-align: right; }
+      .tagline .confirm section .tagger {
+        grid-row: 7; } }
+
+/*# sourceMappingURL=main.css.map */
