@@ -22,7 +22,7 @@ if( $('#email').val() !== ''){
   }
 
   //message displayed no email
-  $('#email').attr('value', 'oops... please provide email')
+  $('#email').attr('value', 'oops... email please')
  
 
 }) 
